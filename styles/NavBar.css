@@ -63,8 +63,8 @@
 
 }
 .logo {
-    height: 75px;
-    width: 130px;
+    height: 55px;
+    width: 190px;
     object-fit: cover;
     position: relative;
     top: -9px;
@@ -182,9 +182,9 @@
         }
         .logo {
             height: 50px;
-            width: 90px;
+            width: 150px;
             position: absolute;
-            top: 5px;
+            top: 10px;
             right: 7%;
         }
         .search {
