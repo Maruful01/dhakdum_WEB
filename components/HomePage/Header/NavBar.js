@@ -27,7 +27,7 @@ const NavBar = ({cartItems}) => {
     };
     return (
         <section>
-        <TopNav/>
+        {/* <TopNav/> */}
         <div className="nav-bar">
 
         {/* // Left side toggle bar and category list for small screen___________________________________*/}
@@ -68,7 +68,7 @@ const NavBar = ({cartItems}) => {
 
         <div className="form-component">
                 <form action="" method="get">
-                <input className="search" type="search" name="" id="" placeholder="Search in Logyzone" />
+                <input className="search" type="search" name="" id="" placeholder="Search in dhakdum" />
                 <Link href="/"><a>
                 <button className="submit"> <span className="search-bar"><Image src={Search} alt="" /></span></button>
                 </a></Link>   

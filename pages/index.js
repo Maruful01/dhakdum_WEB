@@ -64,7 +64,6 @@ export default function Home({products, sliderImages}) {
   return (
       <Layout pageTitle="Dhakdum.com" pageDescription="">
         <NavBar cartItems={cartItems}/>
-        <CategoryNav/>
         <Options/>
         <Slider sliderImages={sliderImages}/>
         <HomePage products={products}/>
