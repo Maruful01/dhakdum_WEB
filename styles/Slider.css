@@ -9,6 +9,7 @@
     padding-left: 5%;
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: 85px;
 }
 .Slider {
  position: relative;

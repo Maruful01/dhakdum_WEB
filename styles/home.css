@@ -73,7 +73,7 @@ padding: 10px;
      text-align: left;
      margin-left: 10px;
      margin-top: 10px;
-     background-color: blue;
+     background-color: #E20B00;
      width: max-content;
      padding: 0px 10px;
      height: 20px;
@@ -96,6 +96,43 @@ padding: 10px;
     font-weight: 450;
     color: #414141;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.featured-products {
+    width: 90%;
+    height: 50px;
+    margin: 0px auto;
+    display: flex;
+    color: #E20B00;
+}
+
+.featured-products .featured-title {
+   width: 200px;
+}
+
+.featured-products .featured-title {
+   width: 200px;
+}
+
+.featured-products div {
+    margin-left: auto;
+    border: 1px solid #E20B00;
+    border-radius: 5px;
+    overflow: auto;
+    white-space: nowrap;
+    scrollbar-color: red yellow;
+    scrollbar-color: revert-layer;
+}
+
+
+.featured-products div h5{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+     margin: 0px 10px;
+     padding: 0px 5px;
+     cursor: pointer;
 }
 
 
@@ -141,9 +178,32 @@ padding: 10px;
                 width: 100px;
                 margin-top: 0px;
             }
+
+            .featured-products div h5{
+                margin: 0px 5px;
+                padding: 0px 5px;
+             }
       }
 
       @media only screen and (max-width: 925px) {
+
+        .products-component {
+              position: relative;
+              top: 40px;
+        }
+
+        .featured-products {
+            position: relative;
+            top: 30px;
+            flex-wrap: wrap;
+            height: 40px;
+        }
+
+        .featured-products div {
+            margin-left: 0px;
+            margin-right: auto;
+            height: 35px;
+         }
 
         .products-component {
             margin-top: 31px;
@@ -169,6 +229,7 @@ padding: 10px;
       }
 
       @media only screen and (max-width: 680px) {
+
 
         /* .products-component {
             grid-template-columns: 1fr 1fr 1fr;

@@ -10,7 +10,7 @@ const Footer = () => {
 <div  className="top-footer">
               <div>
                   <h4>Help Center</h4>
-                  <p>logyzonebd@gmail.com</p>
+                  <p>dhakdum@gmail.com</p>
                   <p>+8801766342245</p>
             </div>
 
@@ -18,7 +18,7 @@ const Footer = () => {
             <div>
                  <h4>About Us</h4>
                  <Link href="/"><a>
-                 About Logyzone.com
+                 About dhakdum.com
                  </a></Link>
                  <br />
                 <Link href="/"><a>
@@ -54,7 +54,7 @@ const Footer = () => {
         <Link href="https://www.youtube.com/channel/UC9UrhP7pAx8xeJZdRYjKorg"><a><YoutubeOutlined /></a></Link>
     </span>
 </div>
-<p style={{color: "gray", textAlign: "center"}}>@2022 Logyzone.com | All rights reserved</p>
+<p style={{color: "gray", textAlign: "center"}}>@2022 devstudio71.com | All rights reserved</p>
         </section>
     );
 };

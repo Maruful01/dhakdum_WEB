@@ -10,6 +10,7 @@ import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import NavBar from '../components/HomePage/Header/NavBar';
 import CategoryNav from '../components/HomePage/Header/Category/CategoryNav';
+import TopNav from '../components/HomePage/Header/TopNav';
 
 export const getStaticProps = async () => {
 
@@ -64,6 +65,7 @@ export default function Home({products, sliderImages}) {
   return (
       <Layout pageTitle="Dhakdum.com" pageDescription="">
         <NavBar cartItems={cartItems}/>
+        <TopNav/>
         <Options/>
         <Slider sliderImages={sliderImages}/>
         <HomePage products={products}/>

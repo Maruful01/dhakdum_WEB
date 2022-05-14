@@ -5,7 +5,7 @@ import Link from 'next/link';
 import cart from '../../../icons/shopping-cart-solid.svg';
 import TopNav from './TopNav';
 import SideBar from './Category/SideBar';
-import Bar from '../../../icons/icons8-menu (1).svg';
+import Bar from '../../../icons/icons8-menu.svg';
 import Search from '../../../icons/icons8-search.svg';
 import { Drawer, Space } from 'antd';
 

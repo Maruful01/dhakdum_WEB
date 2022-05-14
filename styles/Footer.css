@@ -1,5 +1,5 @@
 .footer-component {
-    background-color: #00004d;
+    background-color: #6d0701;
     width: 100%;
     margin: 0px;
     padding: 10px;
@@ -46,7 +46,7 @@
  }
 
  .social-media-links span:hover {
-    color: blue;
+    color: red;
 }
 
  @media only screen and (max-width: 925px) {
