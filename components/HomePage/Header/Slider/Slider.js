@@ -6,16 +6,34 @@ import {
     useWindowWidth,
     useWindowHeight,
   } from '@react-hook/window-size';
-import Skeleton from '../../Skeleton';
+
+// export const getStaticProps = async (context) => {
+
+//   const res = await fetch (`https://www.dhakdum.com/api`, {
+//     method: 'GET',
+//     headers: {
+//         'Content-Type': 'application/json'
+//     },
+// });
+
+//   const sliders = await res.json();
+
+//   return {
+
+//     props: { sliders: sliders},
+//     revalidate: 30,
+
+//   }
+// } 
 
 
 const Slider = ({sliderImages}) => {
 
-  const sliders = [{url: "gz58WHM/slider-2-Slider.png"}, {url: "kmh4C7M/Slider-3.png"}, {url: "NmYQ82S/Eay-Glass-Slider.jpg"}]
-
     const [width, height] = useWindowSize()
     const onlyWidth = useWindowWidth()
     const onlyHeight = useWindowHeight()
+
+
 
 
   const myLoader = ({ src, width, quality }) => {
@@ -28,13 +46,13 @@ const Slider = ({sliderImages}) => {
     <Carousel controls={false} className="Slider">
 
     {
-    sliders.map (sImg => 
-      <Carousel.Item key={sImg.url}  interval={3000}>
+    sliderImages.map (sImg => 
+      <Carousel.Item key={sImg._id}  interval={3000}>
      <span className="d-block w-100">
 
               <Image
          src={sImg.url}
-         alt="First slide"
+         alt={sImg._id}
          loader={myLoader}
          width={2000}
          height={700}

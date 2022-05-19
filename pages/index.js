@@ -23,7 +23,7 @@ export const getStaticProps = async () => {
 
   const data = await res.json();
 
-  const img = await fetch (`https://www.logyzone.com/api`, {
+  const img = await fetch (`https://www.dhakdum.com/api`, {
     method: 'GET',
     headers: {
         'Content-Type': 'application/json'
