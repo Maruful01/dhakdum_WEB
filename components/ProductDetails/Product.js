@@ -131,8 +131,6 @@ const Product = ({product, setOrder, setColorAndQty}) => {
     return (
 <Layout pageTitle={product.title}>
         <NavBar cartItems={cartItems}/>
-        <CategoryNav/>
-
         <div className="des-component">
  <div  className="product-details">
  <div style={{marginBottom: "20px"}}>

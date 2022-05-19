@@ -4,6 +4,7 @@
     background-color: #FAF9F6;
     padding: 10px 20px;
     border-radius: 3px;
+    margin-top: 100px;
 }
 
 .product-details {
@@ -352,6 +353,7 @@ left: 15px;
         width: 90%;
         background: none;
         box-shadow: none;
+        margin-top:
     }
     .product-details {
         flex-direction: column;

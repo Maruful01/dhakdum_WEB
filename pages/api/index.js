@@ -3,14 +3,14 @@
 export default async function handler(req, res) {
 
   try {
-    const result = await [{url: "JBsNG1M/slider-26march.jpg",
+    const result = await [{url: "gz58WHM/slider-2-Slider.png",
     _id: "3001" },
     {
-      url: "static/media/Slider-3.0851ac33.jpg",
+      url: "kmh4C7M/Slider-3.png",
       _id: "3002"
     },
     {
-      url: "static/media/Slider-2.0bf6a659.jpg",
+      url: "NmYQ82S/Eay-Glass-Slider.jpg",
       _id: "3003"
     }
   

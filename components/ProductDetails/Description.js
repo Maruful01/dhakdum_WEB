@@ -37,14 +37,9 @@ const Description = ({product}) => {
             <p> <span>Country / Region</span>: Bangladesh</p>
             <p> <span>Phone</span>: {product.seller.mobile}</p>
             <p> <span>Address</span>: {product.seller.address ? product.seller.address : "Dhaka Commerce College Road, Mirpur, Dhaka, Bangladesh"}</p>
-
-            
             </div>
 
-
-
         </div>
-
           <h4>Description</h4>
           <h5>{product.title}</h5>
           <p>{product.longDescription.text}</p>
