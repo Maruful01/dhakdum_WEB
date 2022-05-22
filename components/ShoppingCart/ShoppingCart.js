@@ -20,11 +20,11 @@ const ShoppingCart = () => {
   const [products, setProducts] = useState();
   const [selectedProducts, setSelectedProducts] = useState();
 
-   setTimeout(() => {
+  if (typeof window !== 'undefined') {
     setProducts (cartItems);
     setCart(true);
     setSelectedProducts (cartItems.filter ((x) =>  x.product.qty.selected === true));
-  }, 0)
+  }
 
   const router = useRouter();
 
