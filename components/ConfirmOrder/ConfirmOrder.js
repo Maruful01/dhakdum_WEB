@@ -50,10 +50,10 @@ const ConfirmOrder = () => {
     }, 1)
 
   
-    if (typeof window !== 'undefined') {
+    setTimeout(function() {     
       products = cartItems;
-      selectedProducts = products.filter ((x) =>  x.product.qty.selected === true);
-  }  
+      selectedProducts = cartItems.filter ((x) =>  x.product.qty.selected === true);
+    }, 5)
 
   const myLoader = ({ src, width, quality }) => {
     return `https://i.ibb.co/${src}`
