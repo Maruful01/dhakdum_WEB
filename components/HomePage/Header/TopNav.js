@@ -12,7 +12,7 @@ const TopNav = () => {
             <ul className="ul">
 
                <li className="top-nav-box">        
-                       <Link href="/"><a> 
+                       <Link href="/authentication"><a> 
                         <span>Signup / Login</span>
                         </a></Link>
                </li>

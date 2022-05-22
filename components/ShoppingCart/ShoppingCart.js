@@ -13,15 +13,18 @@ const ShoppingCart = () => {
 
   const [loggedInUser] = useContext(UserContext);
 
+  const [cart, setCart] = useState(false);
+
   let price= 0;
   let qty =0;
-  let products;
-  let selectedProducts;
+  const [products, setProducts] = useState();
+  const [selectedProducts, setSelectedProducts] = useState();
 
-  if (typeof window !== 'undefined') {
-    products = cartItems;
-    selectedProducts = cartItems.filter ((x) =>  x.product.qty.selected === true);
-   }  
+   setTimeout(() => {
+    setProducts (cartItems);
+    setCart(true);
+    setSelectedProducts (cartItems.filter ((x) =>  x.product.qty.selected === true));
+  }, 0)
 
   const router = useRouter();
 
@@ -50,22 +53,8 @@ const ShoppingCart = () => {
 
  const confirmOrder = () => {
 
-      // fetch('https://stormy-fjord-61489.herokuapp.com/orders', {
-      //     method: 'POST',
-      //     body: JSON.stringify({selected: selectedProducts, phone: "01799827366", address: "Dhaka Bangladesh", authentication: loggedInUser}),
-      //     headers: {
-      //         "Content-type": "application/json; charset=UTF-8"
-      //     }
-      // })
-      // .then(res => res.json())
-      // .then (data => console.log("Order Confirmed", data))
-
-      // router.push ('/oudersuccess');
-
       router.push ('/confirm');
-
-
-
+      
   }
 
 return (
@@ -73,7 +62,7 @@ return (
               <div>
                    <NavBar/>
                    {
-                cartItems && cartItems.length >= 0 ?   
+                cartItems && cartItems.length >= 0 && cart ?   
                 
                 <div   className="shopping-cart-component">
                                <div style={{marginBottom: "70px"}}>

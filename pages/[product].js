@@ -50,18 +50,17 @@ export const getStaticPaths = async () => {
   } 
 
 
-
 const ProductDetails = ({product}) => { 
   const [order, setOrder] = useState(false);
 
   const [colorAndQty, setColorAndQty] = useState();
     return (
-      <div>
+      <section>
         {
           order ? <OrderNow colorAndQty={colorAndQty} product={product}/> : <Product setColorAndQty={setColorAndQty} product={product} setOrder={setOrder}/>
         }
 
-      </div>
+      </section>
     );
 };
 

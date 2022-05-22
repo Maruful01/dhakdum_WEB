@@ -8,7 +8,23 @@ export const  UserContext = createContext ();
 
 const GlobalProvider = ({children}) => {
 
-     let loggedInUser = {phone: "", id: "", name: ""};
+     let loggedInUser;
+        if (typeof window !== 'undefined') {
+            const user =  localStorage.getItem("user");
+
+            if (user == null) {
+                loggedInUser = {phone: "", id: "", name: ""}  
+            }
+
+            else {
+                loggedInUser = JSON.parse(user);
+            }
+
+        } 
+
+        else {
+            loggedInUser = {phone: "", id: "", name: ""}  
+        }
 
     return (
         <Provider store={ store }>
