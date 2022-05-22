@@ -52,7 +52,7 @@ const ConfirmOrder = () => {
   
     if (typeof window !== 'undefined') {
       products = cartItems;
-      selectedProducts = cartItems.filter ((x) =>  x.product.qty.selected === true);
+      selectedProducts = products.filter ((x) =>  x.product.qty.selected === true);
   }  
 
   const myLoader = ({ src, width, quality }) => {
