@@ -37,7 +37,7 @@ const ConfirmOrder = () => {
     
       }, [])
 
-    setTimeout(function() {     
+ if (typeof window !== 'undefined') {
     if (selectedProducts) {
       
               if (selectedProducts.length >= 0) {
@@ -47,13 +47,13 @@ const ConfirmOrder = () => {
                          setPrice (subtotal);
                         }
     }
-    }, 1)
+    }
 
   
-    setTimeout(function() {     
+    if (typeof window !== 'undefined') {
       products = cartItems;
-      selectedProducts = cartItems.filter ((x) =>  x.product.qty.selected === true);
-    }, 5)
+      selectedProducts = products.filter ((x) =>  x.product.qty.selected === true);
+  }  
 
   const myLoader = ({ src, width, quality }) => {
     return `https://i.ibb.co/${src}`
