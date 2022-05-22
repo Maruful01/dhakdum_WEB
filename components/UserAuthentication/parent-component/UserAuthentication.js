@@ -16,7 +16,7 @@ const UserAuthentication = () => {
     useEffect(() => {
         if (loggedInUser.phone.length > 10) {
 
-            router.push ('/')
+            router.push ('/profile')
            }
 
           else {
